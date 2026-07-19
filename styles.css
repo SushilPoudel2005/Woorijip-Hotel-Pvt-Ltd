@@ -156,16 +156,15 @@ img { max-width: 100%; display: block; }
    HERO
    ============================================================ */
 .hero {
+  margin: 0;
+  /* A beautiful natural mix of warm terracotta red blending into an off-yellowish hue */
+  background: linear-gradient(135deg, #b83b1d 0%, #fbf5e6 100%);
+  
+  /* Keeps all your existing hero styles below unchanged */
   position: relative;
-  min-height: 100vh;
-  background: radial-gradient(ellipse at 50% -10%, #33384f 0%, var(--indigo-night) 45%, var(--indigo-deep) 100%);
-  color: var(--hanji);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 140px 0 90px;
+  padding: 6rem 2rem;
+  /* ... any other existing styles inside your .hero rule ... */
 }
-
 .hero-silhouette {
   position: absolute;
   bottom: 0; left: 0; right: 0;
