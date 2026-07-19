@@ -43,14 +43,15 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--hanji);
-  color: var(--ink);
+  /* A smooth natural sunset gradient from terracotta red to off-yellow */
+  background: linear-gradient(180deg, #b83b1d 0%, #fbf5e6 100%);
+  background-attachment: fixed; /* Keeps the gradient smooth as you scroll */
+  color: #222222; /* Makes text dark so it's readable on the new light background */
   font-family: var(--font-body);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
